@@ -7,4 +7,7 @@ class Hash:
         return hash_object.hexdigest()
     
 
-    
+
+    password = b"alina"
+
+    print(hash_password(password))
