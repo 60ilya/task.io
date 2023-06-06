@@ -1,15 +1,13 @@
 class User():
     id = None
-    username = None
-    password_hash = None
+    login = None
+    password = None
     first_name = None
     last_name = None
-    registered_at = None
 
-    def __init__(self, id, username, password_hash, first_name, last_name, registered_at):
+    def __init__(self, login, password, first_name, last_name, id=None):
         self.id = id
-        self.username = username
-        self.password_hash = password_hash
+        self.login = login
+        self.password = password
         self.first_name = first_name
         self.last_name = last_name
-        self.registered_at = registered_at
